@@ -18,6 +18,18 @@
 from typing import TYPE_CHECKING
 from ..import_utils import _LazyModule, is_diffusers_available, OptionalDependencyNotAvailable
 
+from .utils import (
+    AdaptiveKLController,
+    FixedKLController,
+    ConstantLengthDataset,
+    DataCollatorForCompletionOnlyLM,
+    RunningMoments,
+    disable_dropout_in_model,
+    generate,
+    compute_reward_score,
+    conduct_rejection_sampling,
+)
+
 _import_structure = {
     "utils": [
         "AdaptiveKLController",
