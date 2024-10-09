@@ -174,8 +174,8 @@ if __name__ == "__main__":
 
     # Save the dataset with rewards
     rewarded_dataset_path = script_args.save_rewarded_dataset_path
-    #generated_dataset.save_to_disk(rewarded_dataset_path)
-    #print(f"Saved dataset with rewards to {rewarded_dataset_path}")
+    generated_dataset.save_to_disk(rewarded_dataset_path)
+    print(f"Saved dataset with rewards to {rewarded_dataset_path}")
 
     # Rejection sampling
     df = generated_dataset.to_pandas()
